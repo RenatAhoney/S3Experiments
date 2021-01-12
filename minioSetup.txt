@@ -1,0 +1,5 @@
+Настройка minio
+
+docker pull minio/minio
+
+docker run -p 9000:9000 --name minio -v c:/data -e "MINIO_ROOT_USER=Supervisor" -e "MINIO_ROOT_PASSWORD=Supervisor" minio/minio server /data
